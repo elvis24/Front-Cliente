@@ -9,18 +9,33 @@ import { FooterComponent } from './footer/footer.component';
 import { ClienteService } from './cliente.service';
 import { AppRouterModule } from './app.router.module';
 import { HttpClientModule } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatButtonModule} from '@angular/material/button';
+import {MatTableModule} from '@angular/material/table';
+import { CrearClienteComponent } from './crear-cliente/crear-cliente.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { MatInputModule } from '@angular/material/input';
+import { MatCardModule } from '@angular/material/card';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     ClientesComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    CrearClienteComponent
   ],
   imports: [
     BrowserModule,
     AppRouterModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatTableModule,
+    ReactiveFormsModule,
+    MatInputModule,
+    MatCardModule
   ],
   providers: [ClienteService],
   bootstrap: [AppComponent]
