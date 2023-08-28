@@ -16,6 +16,7 @@ import { CrearClienteComponent } from './crear-cliente/crear-cliente.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 import { MatCardModule } from '@angular/material/card';
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 
 @NgModule({
@@ -35,7 +36,8 @@ import { MatCardModule } from '@angular/material/card';
     MatTableModule,
     ReactiveFormsModule,
     MatInputModule,
-    MatCardModule
+    MatCardModule,
+    MatToolbarModule
   ],
   providers: [ClienteService],
   bootstrap: [AppComponent]
